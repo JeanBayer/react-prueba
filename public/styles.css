@@ -3,19 +3,24 @@
     margin: 0;
     box-sizing: border-box;
   }
+
   html {
     font-family: "Montserrat", sans-serif;
   }
+
   body {
-    background: white;
-    padding: 0 16px;
+    background-image: url("./assets/images/space.png");
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed; 
   }
-  
+
   header {
-    background-color: #f5ba13;
-    margin: auto -16px;
+    background-color: inherit;
+    margin: auto;
     padding: 16px 32px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 5px 0px #837c7c1e, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(255,255,255,0);
+    backdrop-filter: blur(1px);
   }
   
   header h1 {
@@ -35,21 +40,26 @@
   footer p {
     color: #ccc;
   }
+  
   .note {
-    background: #fff;
-    border-radius: 7px;
-    box-shadow: 0 2px 4px rgb(228, 221, 221);
-    padding: 10px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.459); 
+    border-radius: 5px;
+    background-color: rgba(108, 170, 189, 0.15);
+    backdrop-filter: blur(5px);
+    padding: 30px 10px 10px;
     width: 240px;
-    margin: 16px;
+    margin: 20px;
     float: left;
   }
+
   .note h1 {
+    color: #fff;
     font-size: 1.1em;
-    margin-bottom: 6px;
+    margin-bottom: 15px;
   }
   .note p {
-    font-size: 1.1em;
+    color: rgb(216, 210, 210);
+    font-size: 1em;
     margin-bottom: 10px;
     white-space: pre-wrap;
     word-wrap: break-word;

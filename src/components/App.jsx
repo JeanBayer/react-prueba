@@ -5,8 +5,15 @@ import Note from "./Note";
 function App() {
   return (
     <div>
+      
       <Header></Header>
       <Note></Note>
+      <Note></Note>
+      <Note></Note>
+      <Note></Note>
+      <Note></Note>
+      <Note></Note>
+
       <Footer></Footer>
     </div>
   );
