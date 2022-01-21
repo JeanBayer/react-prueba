@@ -4,6 +4,29 @@
     box-sizing: border-box;
   }
 
+  /* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: #000000 #fff0f0;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: rgba(13, 20, 68, 0.609);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border-radius: 5px;
+    border: 3px solid rgb(255, 255, 255);
+  }
+
   html {
     font-family: "Montserrat", sans-serif;
   }
@@ -11,7 +34,6 @@
   body {
     background-image: url("./assets/images/space.png");
     background-size: cover;
-    height: 100vh;
     background-attachment: fixed; 
   }
 
@@ -30,7 +52,6 @@
   }
   
   footer {
-    position: absolute;
     text-align: center;
     bottom: 0;
     width: 100%;
@@ -40,16 +61,25 @@
   footer p {
     color: #ccc;
   }
+
+  .notesdiv {
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
   
   .note {
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.459); 
-    border-radius: 5px;
-    background-color: rgba(108, 170, 189, 0.15);
-    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    background-color: rgba(13, 20, 68, 0.609);
+    backdrop-filter: blur(7px);
     padding: 30px 10px 10px;
     width: 240px;
     margin: 20px;
-    float: left;
   }
 
   .note h1 {

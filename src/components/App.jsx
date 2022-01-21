@@ -1,19 +1,14 @@
 import Header from "./Header"
 import Footer from "./Footer";
-import Note from "./Note";
+import Notes from "./Note";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div>
       
       <Header></Header>
-      <Note></Note>
-      <Note></Note>
-      <Note></Note>
-      <Note></Note>
-      <Note></Note>
-      <Note></Note>
-
+      <Notes></Notes>
       <Footer></Footer>
     </div>
   );
